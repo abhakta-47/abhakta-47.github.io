@@ -4,51 +4,214 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ArnabBhakta</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <title>Arnab Bhakta</title>
+    <!-- style stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
   </head>
+
   <body>
-    <nav>
-      <input type="checkbox" id="nav-check" />
-      <div class="nav-btn">
-        <label for="nav-check">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-      </div>
-      <div class="nav-links">
-        <a href="#">HOME</a>
-        <a href="#cp">CP</a>
-        <a href="#projects">PROJECTS</a>
-        <a href="#git">GIT-HUB</a>
-      </div>
-    </nav>
-    <section id="moto">
-      <div class="moto-wrapper"><p id="learn">LEARN</p></div>
-      <div class="moto-wrapper"><p id="code">CODE</p></div>
-      <div class="moto-wrapper"><p id="repeate">REPEATE</p></div>
-    </section>
-    <div class="bg-circles">
-      <div class="top-left">
-        <svg
-          width="421"
-          height="434"
-          viewBox="0 0 421 434"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle cx="173.5" cy="186.5" r="247.5" fill="#FFD166" />
-        </svg>
-      </div>
-    </div>
-    <div id="profile-pic">
-      <img src="./images/user.svg" alt="my pic" />
+    <div id="content">
+      <section id="intro">
+        <!-- <h3 class="headline"></h3> -->
+        <h1 class="name">Hi there👋,<span> Arnab</span> Here</h1>
+        <p class="punchline">
+          I am a sophomore in Computer Science and Engineering at NIT Durgapur.
+          <br />I specialise in software development and Web Developement.
+        </p>
+
+        <!-- <a href="#abt-me"
+          ><button class="btn">About Me<i class="fas fa-user"></i></button
+        ></a> -->
+      </section>
+
+      <!-- <section id="abt-me"></section> -->
+
+      <section id="education">
+        <h1 class="heading">My <span>Education</span> :</h1>
+        <div class="edu-items">
+          <div class="edu-item">
+            <i class="fas fa-graduation-cap"></i>
+            <!-- <span>May, 2017</span> -->
+            <h3>Secondary</h3>
+            <p>Dakshinchak High School<br />(WBBSE)</p>
+            <p>93.85</p>
+          </div>
+          <div class="edu-item">
+            <i class="fas fa-graduation-cap"></i>
+            <!-- <span>May, 2017</span> -->
+            <h3>Higher Secondary</h3>
+            <p>Midnapore Collegiate Scool<br />(WBCHSE)</p>
+            <p>92.4</p>
+          </div>
+          <div class="edu-item">
+            <i class="fas fa-graduation-cap"></i>
+            <!-- <span>May, 2017</span> -->
+            <h3>B.Tech (4 Years) Computer Science and Engineering</h3>
+            <p>National Institute of Technology,<br />Durgapur, W.B.</p>
+            <p>CGPA - 8.04/10</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="profiles">
+        <h1 class="heading">Important <span>Profiles</span> :</h1>
+        <ul class="profile-items">
+          <li class="profile-item">
+            Github :
+            <a
+              href="https://github.com/abhakta-47"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              open profile</a
+            >
+          </li>
+          <li class="profile-item">
+            Codechef :
+            <a
+              href="https://www.codechef.com/users/abhakta_47"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              open profile</a
+            >
+          </li>
+          <li class="profile-item">
+            Codeforces :
+            <a
+              href="https://codeforces.com/profile/Abhakta2019"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              open profile</a
+            >
+          </li>
+          <li class="profile-item">
+            LinkedIn :
+            <a
+              href="https://www.linkedin.com/in/arnab-bhakta-a20b301b5/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              open profile</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section id="projects">
+        <h1 class="heading">Some <span>Projcts</span> :</h1>
+
+        <div class="project-items">
+          <div class="project-item">
+            <img src="images/project-placeholder.png" alt="" />
+            <div class="over-lay">
+              <h3 class="title">LMS with Django</h3>
+              <div class="link-row">
+                <a
+                  href="http://geo-classes.herokuapp.com/6/geo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >view in action</a
+                >
+                <a
+                  href="https://github.com/abhakta-47/lms_django"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >view on git hub</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="images/project-placeholder.png" alt="" />
+            <div class="over-lay">
+              <h3 class="title">Simple ToDo App</h3>
+              <div class="link-row">
+                <a
+                  href="https://festive-almeida-45a445.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >view in action</a
+                >
+                <a
+                  href="https://github.com/abhakta-47/todo-react"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >view on git hub</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="images/project-placeholder.png" alt="" />
+            <div class="over-lay">
+              <h3 class="title">School Site</h3>
+              <div class="link-row">
+                <a
+                  href="https://school-site-project-django.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >view in action</a
+                >
+                <a
+                  href="https://github.com/abhakta-47/school_site"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >view on git hub</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="images/project-placeholder.png" alt="" />
+            <div class="over-lay">
+              <h3 class="title">Simple Chat App</h3>
+              <div class="link-row">
+                <a
+                  href="https://simplechatappbyabdev.herokuapp.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >view in action</a
+                >
+                <a
+                  href="https://github.com/abhakta-47/ProjectChatApp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >view on git hub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h1 class="heading">My <span>contact</span> :</h1>
+
+        <h3><i class="fas fa-envelope"></i> ab.inptahtoadev@gmail.com</h3>
+        <h3><i class="fas fa-phone"></i>+91 9932924560</h3>
+        <h3>
+          <i class="fas fa-map-marker-alt"></i> Egra &amp; Durgapur, India
+        </h3>
+      </section>
     </div>
   </body>
 </html>

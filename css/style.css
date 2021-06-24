@@ -1,0 +1,303 @@
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: none;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+* {
+  color: white;
+}
+
+body {
+  background-color: #151515;
+  height: 100%;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+#conent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section {
+  padding: 1rem;
+  margin: 25rem 5rem;
+}
+
+section .heading {
+  font-size: 4rem;
+  font-weight: 300;
+  padding: 1rem;
+  border-bottom: .1rem solid #fff4;
+  color: #fff;
+}
+
+section .heading span {
+  font-weight: 600;
+  color: #46BDDF;
+}
+
+#intro {
+  min-height: 100vh;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding: 0 15rem;
+}
+
+#intro h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+#intro h1 {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 300;
+}
+
+#intro h1 span {
+  font-size: 4.2rem;
+  font-weight: 400;
+  color: #46BDDF;
+}
+
+#intro p {
+  font-family: 'Lato', sans-serif;
+  font-size: 2.5rem;
+  color: #eee;
+  padding: 1rem 0;
+}
+
+#education .edu-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 4rem 0;
+}
+
+#education .edu-items .edu-item {
+  width: 27rem;
+  height: 25rem;
+  padding-bottom: 4rem;
+  border-bottom: .2rem solid #fff;
+  position: relative;
+}
+
+#education .edu-items .edu-item i {
+  position: absolute;
+  bottom: -2.1rem;
+  left: -2.5rem;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background: #46BDDF;
+}
+
+#education .edu-items .edu-item span {
+  font-size: 1.3rem;
+  background: #222;
+  color: #fff;
+  border-radius: 5rem;
+  padding: .5rem 2.5rem;
+}
+
+#education .edu-items .edu-item h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  padding-top: 1.5rem;
+  min-height: 10rem;
+}
+
+#education .edu-items .edu-item p {
+  font-size: 1.4rem;
+  color: #eee;
+}
+
+#profiles .profile-items {
+  margin: 2rem 0;
+}
+
+#profiles .profile-items .profile-item {
+  font-size: 2rem;
+  color: #46BDDF;
+  padding: 0.3rem;
+}
+
+#projects .project-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+#projects .project-items .project-item {
+  position: relative;
+  height: 20rem;
+  width: 26rem;
+  border-radius: 1rem;
+  margin: 2rem;
+  cursor: pointer;
+}
+
+#projects .project-items .project-item img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#projects .project-items .project-item .over-lay {
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#projects .project-items .project-item .over-lay .title {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projects .project-items .project-item .over-lay .link-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#projects .project-items .project-item .over-lay .link-row a {
+  color: #46BDDF;
+  font-size: 1.4rem;
+  padding-left: 3rem;
+}
+
+#projects .project-items .project-item:hover .over-lay {
+  opacity: 1;
+}
+
+#contact h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  color: #eee;
+  padding: 1rem 0;
+  font-weight: normal;
+}
+
+#contact i {
+  padding-right: 1rem;
+  color: #46BDDF;
+}
+
+@media only screen and (max-width: 940px) {
+  #intro {
+    padding: 0 2rem;
+  }
+  .edu-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .edu-items .edu-item {
+    padding-left: 4rem;
+    border-left: .2rem solid #fff;
+    border-bottom: none !important;
+  }
+  .edu-items .edu-item i {
+    top: -1.5rem;
+    left: -2.5rem;
+    bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+  #projects .over-lay {
+    opacity: 0.9 !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
