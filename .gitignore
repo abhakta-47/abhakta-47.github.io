@@ -1,2 +1,4 @@
 .vscode/
 proto/
+css/*.scss
+css/*css.map
