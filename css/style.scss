@@ -56,13 +56,14 @@ section {
   .content {
     h3 {
       font-size: 2.8rem;
+      margin-bottom: 1px;
     }
     h5 {
       font-size: 2.4rem;
     }
     .subtitle {
-      color: #9a9b9d;
-      margin-top: 5px;
+      color: #f0f1f48c;
+      margin-top: 0;
     }
     font-size: 2rem;
   }
@@ -116,10 +117,14 @@ section {
   padding: 4rem 0;
   .edu-item {
     width: 27rem;
-    height: 25rem;
+    height: 35rem;
     padding-bottom: 4rem;
     border-bottom: 0.2rem solid #fff;
     position: relative;
+
+    display: flex;
+    flex-direction: column;
+
     i {
       position: absolute;
       bottom: -2.1rem;
@@ -141,27 +146,27 @@ section {
       padding: 0.5rem 2.5rem;
     }
     h3 {
-      font-size: 2rem;
+      font-size: 2.3rem;
       font-weight: 600;
       color: #fff;
       padding-top: 1.5rem;
       min-height: 10rem;
     }
     p {
-      font-size: 1.4rem;
+      font-size: 1.8rem;
       color: #eee;
     }
   }
 }
 
-#profiles .profile-items {
-  margin: 2rem 0;
-  .profile-item {
-    font-size: 2rem;
-    color: #46bddf;
-    padding: 0.3rem;
-  }
-}
+// #profiles .profile-items {
+//   margin: 2rem 0;
+//   .profile-item {
+//     font-size: 2rem;
+//     color: #46bddf;
+//     padding: 0.3rem;
+//   }
+// }
 
 #exp {
 }
@@ -230,19 +235,28 @@ section {
   }
 }
 
-#cp {
-  .profile-items {
-    margin: 2rem 0;
-    .profile-item {
-      font-size: 2rem;
-      color: #46bddf;
-      padding: 0.3rem;
-      a {
-        text-decoration: none;
-      }
+.profile-items {
+  margin: 2rem 0;
+  list-style: none;
+  .profile-item {
+    font-size: 2rem;
+    color: #46bddf;
+    padding: 0.3rem;
+    i,
+    svg,
+    img {
+      color: inherit;
+      margin-right: 2rem;
+    }
+    a {
+      text-decoration: none;
     }
   }
 }
+
+// #cp {
+
+// }
 
 @media only screen and (max-width: 940px) {
   #intro {
@@ -253,17 +267,19 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    .edu-item {
+      padding-left: 4rem;
+      border-left: 0.2rem solid #fff;
+      border-bottom: none !important;
+    }
+    i {
+      top: -1.5rem;
+      left: -2.5rem;
+      bottom: 0;
+    }
   }
-  .edu-items .edu-item {
-    padding-left: 4rem;
-    border-left: 0.2rem solid #fff;
-    border-bottom: none !important;
-  }
-  .edu-items .edu-item i {
-    top: -1.5rem;
-    left: -2.5rem;
-    bottom: 0;
-  }
+  // .edu-items
+  // .edu-items .edu-item
 }
 
 #github {

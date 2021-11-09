@@ -69,6 +69,7 @@ section .content {
 
 section .content h3 {
   font-size: 2.8rem;
+  margin-bottom: 1px;
 }
 
 section .content h5 {
@@ -76,8 +77,8 @@ section .content h5 {
 }
 
 section .content .subtitle {
-  color: #9a9b9d;
-  margin-top: 5px;
+  color: #f0f1f48c;
+  margin-top: 0;
 }
 
 #intro {
@@ -155,10 +156,17 @@ section .content .subtitle {
 
 #education .edu-items .edu-item {
   width: 27rem;
-  height: 25rem;
+  height: 35rem;
   padding-bottom: 4rem;
   border-bottom: 0.2rem solid #fff;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #education .edu-items .edu-item i {
@@ -184,7 +192,7 @@ section .content .subtitle {
 }
 
 #education .edu-items .edu-item h3 {
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-weight: 600;
   color: #fff;
   padding-top: 1.5rem;
@@ -192,18 +200,8 @@ section .content .subtitle {
 }
 
 #education .edu-items .edu-item p {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   color: #eee;
-}
-
-#profiles .profile-items {
-  margin: 2rem 0;
-}
-
-#profiles .profile-items .profile-item {
-  font-size: 2rem;
-  color: #46bddf;
-  padding: 0.3rem;
 }
 
 #projects .project-items {
@@ -296,17 +294,25 @@ section .content .subtitle {
   color: #46bddf;
 }
 
-#cp .profile-items {
+.profile-items {
   margin: 2rem 0;
+  list-style: none;
 }
 
-#cp .profile-items .profile-item {
+.profile-items .profile-item {
   font-size: 2rem;
   color: #46bddf;
   padding: 0.3rem;
 }
 
-#cp .profile-items .profile-item a {
+.profile-items .profile-item i,
+.profile-items .profile-item svg,
+.profile-items .profile-item img {
+  color: inherit;
+  margin-right: 2rem;
+}
+
+.profile-items .profile-item a {
   text-decoration: none;
 }
 
@@ -331,7 +337,7 @@ section .content .subtitle {
     border-left: 0.2rem solid #fff;
     border-bottom: none !important;
   }
-  .edu-items .edu-item i {
+  .edu-items i {
     top: -1.5rem;
     left: -2.5rem;
     bottom: 0;
