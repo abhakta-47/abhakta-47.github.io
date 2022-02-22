@@ -112,6 +112,8 @@ section .content .subtitle {
 
 #intro .content img {
   border-radius: 50%;
+  height: 20rem;
+  width: auto;
   border: solid 0.5rem #46bddf;
 }
 
@@ -205,42 +207,23 @@ section .content .subtitle {
 }
 
 #projects .project-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  padding: 2rem 0;
+  -ms-grid-columns: (minmax(40rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-gap: 5rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 2rem 0;
 }
 
 #projects .project-items .project-item {
   position: relative;
   height: 20rem;
-  width: 26rem;
   border-radius: 1rem;
-  margin: 2rem;
   cursor: pointer;
-}
-
-#projects .project-items .project-item img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-#projects .project-items .project-item .over-lay {
-  position: absolute;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,13 +239,24 @@ section .content .subtitle {
           justify-content: center;
 }
 
-#projects .project-items .project-item .over-lay .title {
+#projects .project-items .project-item .bg-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  position: absolute;
+  z-index: -1;
+  background-image: url("/images/project-placeholder.png");
+  background-size: cover;
+}
+
+#projects .project-items .project-item .title {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
-#projects .project-items .project-item .over-lay .link-row {
+#projects .project-items .project-item .link-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -270,7 +264,7 @@ section .content .subtitle {
       justify-content: space-around;
 }
 
-#projects .project-items .project-item .over-lay .link-row a {
+#projects .project-items .project-item .link-row a {
   color: #46bddf;
   font-size: 1.4rem;
   padding-left: 3rem;
