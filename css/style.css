@@ -24,10 +24,79 @@ body {
 body {
   background-color: #151515;
   height: 100%;
+  overflow-y: hidden;
 }
 
 h3 {
   font-size: 2rem;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  background-color: #151515;
+  width: 100vw;
+  z-index: 100;
+  font-size: 1.8rem;
+}
+
+header .menu {
+  display: none;
+}
+
+header .menu i {
+  font-size: 3rem;
+  color: #46bddf;
+}
+
+header ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+}
+
+header ul li:first-of-type {
+  margin-left: auto;
+}
+
+header ul li {
+  padding: 1rem 2rem;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #46bddf;
+}
+
+@media screen and (max-width: 600px) {
+  header .menu {
+    display: block;
+    margin-left: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  header .menu i {
+    padding: 1rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    cursor: pointer;
+  }
+  header .menu #menu-btn-close {
+    display: none;
+  }
+  header ul {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header ul li:first-of-type {
+    margin-left: 0;
+  }
 }
 
 #container {
@@ -39,8 +108,8 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-scroll-snap-type: y mandatory;
-  scroll-snap-type: y mandatory;
+  -ms-scroll-snap-type: y proximity;
+      scroll-snap-type: y proximity;
   overflow-y: scroll;
 }
 
