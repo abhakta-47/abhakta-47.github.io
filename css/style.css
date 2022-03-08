@@ -37,7 +37,7 @@ header {
   background-color: #151515;
   width: 100vw;
   z-index: 100;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 header .menu {
@@ -62,15 +62,27 @@ header ul li:first-of-type {
 }
 
 header ul li {
-  padding: 1rem 2rem;
+  margin: 0.6rem 1rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 header ul li a {
+  padding: 1rem 1rem;
   text-decoration: none;
   color: #46bddf;
 }
 
-@media screen and (max-width: 600px) {
+header ul li a:hover {
+  border-bottom: white solid 1px;
+}
+
+header ul .active {
+  border-bottom: white solid 1px;
+}
+
+@media screen and (max-width: 1200px) {
   header .menu {
     display: block;
     margin-left: auto;
@@ -94,8 +106,11 @@ header ul li a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  header ul li:first-of-type {
-    margin-left: 0;
+  header ul li {
+    margin-bottom: 2rem;
+  }
+  header ul li:first-of-type > a {
+    margin-left: 0.6rem;
   }
 }
 
@@ -117,6 +132,12 @@ section {
   padding: 1rem;
   margin: 10rem 5rem;
   scroll-snap-align: start;
+}
+
+@media screen and (min-width: 1200px) {
+  section {
+    scroll-margin-top: 40px;
+  }
 }
 
 section .heading {

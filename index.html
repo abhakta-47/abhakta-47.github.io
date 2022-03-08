@@ -30,20 +30,20 @@
 
   <body>
     <header>
-      <div class="menu">
+      <div id="menu" class="menu">
         <i id="menu-btn" class="fa fa-bars"></i>
         <i id="menu-btn-close" class="fas fa-times"></i>
       </div>
       <!-- <div class="menu menu-close"></div> -->
       <ul id="menu-items">
-        <li><a href="#intro">Intro</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#profiles">Profiles</a></li>
-        <li><a href="#exp">Experiences</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#github">Contributions</a></li>
-        <li><a href="#cp">Competitive Programming</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a class="menu-item" href="#intro">Intro</a></li>
+        <li><a class="menu-item" href="#education">Education</a></li>
+        <li><a class="menu-item" href="#profiles">Profiles</a></li>
+        <li><a class="menu-item" href="#exp">Experiences</a></li>
+        <li><a class="menu-item" href="#projects">Projects</a></li>
+        <li><a class="menu-item" href="#github">Contributions</a></li>
+        <li><a class="menu-item" href="#cp">CompetitiveProgramming</a></li>
+        <li><a class="menu-item" href="#contact">Contact</a></li>
       </ul>
     </header>
 
@@ -506,20 +506,40 @@
     </main>
 
     <script>
+      let menu = document.getElementById("menu");
       let menuOpen = document.getElementById("menu-btn");
       let menuClose = document.getElementById("menu-btn-close");
       let menuItems = document.getElementById("menu-items");
-      menuOpen.addEventListener("click", (event) => {
-        // console.log("clicked");
+
+      const openMenu = () => {
         menuItems.style.display = "block";
         menuOpen.style.display = "none";
         menuClose.style.display = "block";
-      });
-      menuClose.addEventListener("click", (event) => {
-        // console.log("clicked");
+      };
+      const closeMenu = () => {
+        if (window.innerWidth >= 1200) {
+          return;
+        }
         menuItems.style.display = "none";
         menuOpen.style.display = "block";
         menuClose.style.display = "none";
+      };
+
+      menuOpen.addEventListener("click", (event) => openMenu());
+      menuClose.addEventListener("click", (event) => closeMenu());
+
+      let menuItemList = document.getElementsByClassName("menu-item");
+      const resetHeaderActive = () => {
+        Array.prototype.forEach.call(menuItemList, (menuItem) => {
+          menuItem.classList.remove("active");
+        });
+      };
+      Array.prototype.forEach.call(menuItemList, (menuItem) => {
+        menuItem.addEventListener("click", (event) => {
+          closeMenu();
+          resetHeaderActive();
+          menuItem.classList.add("active");
+        });
       });
     </script>
 
