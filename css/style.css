@@ -7,13 +7,11 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-decoration: none;
   outline: none;
   border: none;
   text-transform: none;
-  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
@@ -39,49 +37,38 @@ header {
   z-index: 100;
   font-size: 2rem;
 }
-
 header .menu {
   display: none;
 }
-
 header .menu i {
   font-size: 3rem;
   color: #46bddf;
 }
-
 header ul {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-right: auto;
 }
-
 header ul li:first-of-type {
   margin-left: auto;
 }
-
 header ul li {
   margin: 0.6rem 1rem;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
-
 header ul li a {
   padding: 1rem 1rem;
   text-decoration: none;
   color: #46bddf;
 }
-
 header ul li a:hover {
   border-bottom: white solid 1px;
 }
-
 header ul .active {
   border-bottom: white solid 1px;
 }
-
 @media screen and (max-width: 1200px) {
   header .menu {
     display: block;
@@ -101,10 +88,7 @@ header ul .active {
   }
   header ul {
     display: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   header ul li {
     margin-bottom: 2rem;
@@ -116,13 +100,8 @@ header ul .active {
 
 #container {
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   -ms-scroll-snap-type: y proximity;
       scroll-snap-type: y proximity;
   overflow-y: scroll;
@@ -133,134 +112,94 @@ section {
   margin: 10rem 5rem;
   scroll-snap-align: start;
 }
-
 @media screen and (min-width: 1200px) {
   section {
     scroll-margin-top: 40px;
   }
 }
-
 section .heading {
   font-size: 4rem;
   font-weight: 300;
   padding: 1rem;
-  border-bottom: 0.1rem solid #fff4;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2666666667);
   color: #fff;
 }
-
 section .heading span {
   font-weight: 600;
   color: #46bddf;
 }
-
 section .content {
   font-size: 2rem;
 }
-
 section .content h3 {
   font-size: 2.8rem;
   margin-bottom: 1px;
 }
-
 section .content h5 {
   font-size: 2.4rem;
 }
-
 section .content .subtitle {
-  color: #f0f1f48c;
+  color: rgba(240, 241, 244, 0.5490196078);
   margin-top: 0;
 }
 
 #intro {
   min-height: 100vh;
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  justify-content: center;
+  flex-flow: column;
   padding: 0 15rem;
 }
-
 #intro .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-evenly;
   text-align: center;
 }
-
 #intro .content img {
   border-radius: 50%;
   height: 20rem;
   width: auto;
   border: solid 0.5rem #46bddf;
 }
-
 #intro h1 {
   font-size: 3rem;
   color: #fff;
   font-weight: 300;
 }
-
 #intro h1 span {
   font-size: 4.2rem;
   font-weight: 400;
   color: #46bddf;
 }
-
 #intro p {
   font-family: "Lato", sans-serif;
   font-size: 2.5rem;
   color: #eee;
   padding: 1rem 0;
 }
-
 #intro h3 {
   font-size: 2rem;
   color: #fff;
 }
 
 #education .edu-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 4rem 0;
 }
-
 #education .edu-items .edu-item {
   width: 27rem;
   height: 35rem;
   padding-bottom: 4rem;
   border-bottom: 0.2rem solid #fff;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 #education .edu-items .edu-item i {
   position: absolute;
   bottom: -2.1rem;
@@ -274,7 +213,6 @@ section .content .subtitle {
   color: #fff;
   background: #46bddf;
 }
-
 #education .edu-items .edu-item span {
   font-size: 1.3rem;
   background: #222;
@@ -282,7 +220,6 @@ section .content .subtitle {
   border-radius: 5rem;
   padding: 0.5rem 2.5rem;
 }
-
 #education .edu-items .edu-item h3 {
   font-size: 2.3rem;
   font-weight: 600;
@@ -290,45 +227,36 @@ section .content .subtitle {
   padding-top: 1.5rem;
   min-height: 10rem;
 }
-
 #education .edu-items .edu-item p {
   font-size: 1.8rem;
   color: #eee;
 }
 
-#projects .project-items {
-  display: -ms-grid;
-  display: grid;
-  padding: 2rem 0;
-  -ms-grid-columns: (minmax(40rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-  grid-gap: 5rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+#exp .content {
+  margin-top: 4rem;
+}
+#exp .content article h5 {
+  margin-bottom: 1rem;
 }
 
+#projects .project-items {
+  display: grid;
+  padding: 2rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-gap: 5rem;
+  justify-content: center;
+}
 #projects .project-items .project-item {
   position: relative;
   height: 20rem;
   border-radius: 1rem;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.7);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
 #projects .project-items .project-item .bg-img {
   height: 100%;
   width: 100%;
@@ -338,22 +266,14 @@ section .content .subtitle {
   background-image: url("/images/project-placeholder.png");
   background-size: cover;
 }
-
 #projects .project-items .project-item .title {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
 }
-
 #projects .project-items .project-item .link-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
-
 #projects .project-items .project-item .link-row a {
   color: #46bddf;
   font-size: 1.4rem;
@@ -361,18 +281,13 @@ section .content .subtitle {
 }
 
 #contact h3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-size: 2rem;
   color: #eee;
   padding: 1rem 0;
   font-weight: normal;
 }
-
 #contact i {
   padding-right: 1rem;
   color: #46bddf;
@@ -382,20 +297,17 @@ section .content .subtitle {
   margin: 2rem 0;
   list-style: none;
 }
-
 .profile-items .profile-item {
   font-size: 2rem;
   color: #46bddf;
   padding: 0.3rem;
 }
-
 .profile-items .profile-item i,
 .profile-items .profile-item svg,
 .profile-items .profile-item img {
   color: inherit;
   margin-right: 2rem;
 }
-
 .profile-items .profile-item a {
   text-decoration: none;
 }
@@ -405,16 +317,9 @@ section .content .subtitle {
     padding: 0 2rem;
   }
   .edu-items {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .edu-items .edu-item {
     padding-left: 4rem;
@@ -427,7 +332,6 @@ section .content .subtitle {
     bottom: 0;
   }
 }
-
 #github .content {
   text-align: center;
 }
@@ -442,5 +346,4 @@ section .content .subtitle {
   #projects .over-lay {
     opacity: 0.9 !important;
   }
-}
-/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */

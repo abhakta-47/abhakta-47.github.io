@@ -246,6 +246,14 @@ section {
 // }
 
 #exp {
+  .content {
+    margin-top: 4rem;
+    article {
+      h5 {
+        margin-bottom: 1rem;
+      }
+    }
+  }
 }
 
 #projects .project-items {
