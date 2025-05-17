@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hi, I am Arnab Bhakta.  I am a pre-final year CSE student ...." />
+  <meta name="author" content="Arnab Bhakta abhakta-47" />
+  <title>Arnab Bhakta</title>
+  <!-- style stylesheet -->
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@300;400;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+
+<body>
+
+  {% include "header.html" %}
+
+  <main id="container">
+
+
+    {% include "intro.html" %}
+    <!-- <section id="abt-me"></section> -->
+
+    {% include "education.html" %}
+
+    {% include "profiles.html" %}
+
+    {% include "exp.html" %}
+
+    {% include "projects.html" %}
+
+    {% include "github.html" %}
+
+    {% include "cp.html" %}
+
+    {% include "profiles.html" %}
+
+    {% include "contact.html" %}
+
+
+  </main>
+
+  <script>
+    let menu = document.getElementById("menu");
+    let menuOpen = document.getElementById("menu-btn");
+    let menuClose = document.getElementById("menu-btn-close");
+    let menuItems = document.getElementById("menu-items");
+
+    const openMenu = () => {
+      menuItems.style.display = "block";
+      menuOpen.style.display = "none";
+      menuClose.style.display = "block";
+    };
+    const closeMenu = () => {
+      if (window.innerWidth >= 1200) {
+        return;
+      }
+      menuItems.style.display = "none";
+      menuOpen.style.display = "block";
+      menuClose.style.display = "none";
+    };
+
+    menuOpen.addEventListener("click", (event) => openMenu());
+    menuClose.addEventListener("click", (event) => closeMenu());
+
+    let menuItemList = document.getElementsByClassName("menu-item");
+    const resetHeaderActive = () => {
+      Array.prototype.forEach.call(menuItemList, (menuItem) => {
+        menuItem.classList.remove("active");
+      });
+    };
+    Array.prototype.forEach.call(menuItemList, (menuItem) => {
+      menuItem.addEventListener("click", (event) => {
+        closeMenu();
+        resetHeaderActive();
+        menuItem.classList.add("active");
+      });
+    });
+  </script>
+
+  <!-- <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script> -->
+</body>
+
+</html>

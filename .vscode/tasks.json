@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build HTML from template",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "renderer.py",
+                "index.template.html",
+                ">",
+                "index.html"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        }
+    ]
+}

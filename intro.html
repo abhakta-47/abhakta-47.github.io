@@ -1,0 +1,58 @@
+<section id="intro">
+  <!-- <h3 class="headline"></h3> -->
+  <h1 class="name">Hi there👋,<span> Arnab</span> Here</h1>
+  <div class="content">
+    <img src="/images/me.jpeg" alt="" />
+    <p id="punchline" class="punchline"></p>
+  </div>
+
+  <style>
+    .punchline::after {
+      content: '|';
+      animation: blink 1s step-end infinite;
+      margin-left: 2px;
+    }
+
+    @keyframes blink {
+
+      from,
+      to {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 1;
+      }
+    }
+  </style>
+
+  <script>
+    function typeWriter({ id, text, speed = 50 }) {
+      let i = 0;
+      const target = document.getElementById(id);
+      target.innerHTML = ""; // Clear existing content
+
+      function type() {
+        if (i < text.length) {
+          target.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(type, speed);
+        }
+      }
+
+      type();
+    }
+
+    // Example usage:
+    typeWriter({
+      id: "punchline",
+      text: "I’m an M.Tech student in Computer Science at IIT Bombay,\nspecializing in cloud technologies.",
+      speed: 40
+    });
+  </script>
+
+
+  <!-- <a href="#abt-me"
+      ><button class="btn">About Me<i class="fas fa-user"></i></button
+    ></a> -->
+</section>

@@ -1,0 +1,14 @@
+{
+  "editor.formatOnSave": true,
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "\\.(html|css|js)$",
+        "notMatch": "exclude-me\\.js$",
+        "message": "echo '${fileBasename}' rendering",
+        "cmd": "python renderer.py index.template.html > index.html",
+        "messageAfter": "echo '${fileBasename}' rendered",
+      }
+    ]
+  }
+}
